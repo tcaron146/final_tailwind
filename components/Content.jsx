@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Content = () => {
   return (
     <div className="flex justify-around">
