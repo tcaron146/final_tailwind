@@ -10,7 +10,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="flex-grow bg-secondary overflow-y-scroll">
+      <div className="flex-grow bg-secondary">
         <Navbar />
         <ScrollSnap />
         <Content />
