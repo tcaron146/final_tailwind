@@ -16,7 +16,6 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
-    setLogo(!logo)
   };
 
   const handleSignIn = async () => {
@@ -46,7 +45,7 @@ const Navbar = () => {
   return (
     <div className="flex w-full justify-between items-center absolute h-20 px-4 z-10 text-primary">
       <div>
-        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Soup.</h1>
+        <h1 className="block">Soup.</h1>
       </div>
       {/* desktop links */}
       <ul className="hidden sm:flex">
@@ -57,16 +56,16 @@ const Navbar = () => {
       </ul>
       {/* login-logout icon + Search Icon*/}
       <div className="hidden sm:flex">
-      <BsSearch className="hidden sm:flex mr-2" size={20} />
+      <BsSearch className="hidden sm:flex mr-2 cursor-pointer" size={20} />
         {loading ? null : !user ? (
           <div className="flex">
-            <BsPerson onClick={handleSignIn} className='' size={20} />
-            <p onClick={handleSignIn} className="hidden sm:flex">Login</p>
+            <BsPerson onClick={handleSignIn} className='hidden sm:flex cursor-pointer' size={20} />
+            <p onClick={handleSignIn} className="hidden sm:flex cursor-pointer font-semibold">Login</p>
           </div>
         ) : (
           <div className="flex">
-            <BsPerson onClick={handleSignOut} className='' size={20} />
-            <p onClick={handleSignOut} className="hidden sm:flex">Logout</p>
+            <BsPerson onClick={handleSignOut} className='hidden sm:flex cursor-pointer' size={20} />
+            <p onClick={handleSignOut} className="hidden sm:flex cursor-pointer font-semibold">Logout</p>
           </div>
         )}
       </div>
