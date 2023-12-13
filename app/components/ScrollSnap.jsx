@@ -47,7 +47,7 @@ const ScrollSnap = () => {
               </div>
               <div className="snap-center shrink-0">
                 <img
-                  className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110 blur-sm hover:blur-none"
+                  className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic6.jpg"
                 />
               </div>
