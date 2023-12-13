@@ -6,16 +6,13 @@ import Content from "@/app/components/Content";
 import Footer from "@/app/components/Footer";
 import Carousel from "@/app/components/Carousel";
 
-export default function Home() {
+
+const Page = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex-grow bg-secondary">
-        <Navbar />
-        <ScrollSnap />
-        <Content />
-        <Carousel />
-      </div>
-      <Footer />
+    <div>
+      <Navbar />
     </div>
-  );
+  )
 }
+
+export default Page

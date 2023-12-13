@@ -107,4 +107,24 @@
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+
+  button{
+    @apply p-3 border bg-green-300 text-primary rounded-md;
+  }
+
+  h1{
+    @apply text-3xl sm:text-4xl font-bold;
+  }
+
+  body{
+    @apply font-[Poppins];
+  }
+
+  li{
+    @apply p-4 font-semibold;
+  }
+  
+  .icon{
+    @apply text-2xl cursor-pointer;
+  }
 }
