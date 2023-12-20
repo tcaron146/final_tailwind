@@ -19,37 +19,37 @@ const ScrollSnap = () => {
               <div className="snap-center shrink-0">
                 <Image
                   src="/pic1.jpg"
-                  className="z-900 shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
+                  className="z-900 shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110" alt="Image" width={20} height={20} 
                 />
               </div>
               <div className="snap-center shrink-0">
                 <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
-                  src="/pic2.jpg"
+                  src="/pic2.jpg" alt="Image" width={20} height={20}
                 />
               </div>
               <div className="snap-center shrink-0">
                 <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
-                  src="/pic3.jpg"
+                  src="/pic3.jpg" alt="Image" width={20} height={20}
                 />
               </div>
               <div className="snap-center shrink-0">
                 <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
-                  src="/pic4.jpg"
+                  src="/pic4.jpg" alt="Image" width={20} height={20}
                 />
               </div>
               <div className="snap-center shrink-0">
                 <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
-                  src="/pic5.jpg"
+                  src="/pic5.jpg" alt="Image" width={20} height={20}
                 />
               </div>
               <div className="snap-center shrink-0">
                 <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
-                  src="/pic6.jpg"
+                  src="/pic6.jpg" alt="Image" width={20} height={20}
                 />
               </div>
               <div className="snap-center shrink-0">
