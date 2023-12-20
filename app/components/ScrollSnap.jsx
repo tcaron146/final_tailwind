@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ScrollSnap = () => {
   return (
@@ -16,37 +17,37 @@ const ScrollSnap = () => {
                 <div className="shrink-0 w-4 sm:w-48" />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   src="/pic1.jpg"
                   className="z-900 shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                 />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic2.jpg"
                 />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic3.jpg"
                 />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic4.jpg"
                 />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic5.jpg"
                 />
               </div>
               <div className="snap-center shrink-0">
-                <img
+                <Image
                   className="shrink-0 w-80 h-40 rounded-lg drop-shadow-xl transition ease-in duration-200 hover:-translate-y-1 hover:scale-110"
                   src="/pic6.jpg"
                 />
