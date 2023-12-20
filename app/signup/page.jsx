@@ -28,7 +28,8 @@ export default function Page(){
         sessionStorage.setItem('user', true)
         setUsername('');
         setEmail('');
-        setPassword('')
+        setPassword('');
+        router.push("/");
 
     } catch(e){
         console.error(e)

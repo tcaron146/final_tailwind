@@ -1,0 +1,258 @@
+[debug] [2023-12-20T20:55:41.885Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T20:55:41.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tcaro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-20T20:55:41.887Z] CLI Version:   13.0.2
+[debug] [2023-12-20T20:55:41.887Z] Platform:      win32
+[debug] [2023-12-20T20:55:41.887Z] Node Version:  v20.10.0
+[debug] [2023-12-20T20:55:41.887Z] Time:          Wed Dec 20 2023 13:55:41 GMT-0700 (Mountain Standard Time)
+[debug] [2023-12-20T20:55:41.887Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T20:55:41.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T20:55:41.934Z] > authorizing via signed-in user (soupdejourtommy@gmail.com)
+[debug] [2023-12-20T20:55:41.934Z] [iam] checking project soupdejourtommy-ba24e for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-20T20:55:41.936Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions [none]
+[debug] [2023-12-20T20:55:41.936Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions x-goog-quota-user=projects/soupdejourtommy-ba24e
+[debug] [2023-12-20T20:55:41.936Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T20:55:42.212Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions 200
+[debug] [2023-12-20T20:55:42.212Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T20:55:42.213Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T20:55:42.480Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T20:55:42.480Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e {"projectId":"soupdejourtommy-ba24e","projectNumber":"880724282692","displayName":"soupdejourtommy","name":"projects/soupdejourtommy-ba24e","resources":{"hostingSite":"soupdejourtommy-ba24e","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1"},"state":"ACTIVE","etag":"1_c411d381-5483-4172-9567-e64dd1da54f3"}
+[debug] [2023-12-20T20:55:45.026Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites pageToken=&pageSize=10
+[debug] [2023-12-20T20:55:45.709Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites 200
+[debug] [2023-12-20T20:55:45.709Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites {"sites":[{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy","defaultUrl":"https://soupdejourtommy.web.app","appId":"1:880724282692:web:71e1cc9f07dc8f90b21b11","type":"USER_SITE"},{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-20T20:55:45.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config [none]
+[debug] [2023-12-20T20:55:46.367Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config 200
+[debug] [2023-12-20T20:55:46.367Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config {"projectId":"soupdejourtommy-ba24e","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1","apiKey":"AIzaSyAF8-fQl5ForsCDmsmcZJ7NIvfP0BxOIZE","authDomain":"soupdejourtommy-ba24e.firebaseapp.com","messagingSenderId":"880724282692","measurementId":"G-CR8Q0FT0HQ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-20T20:55:51.982Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T20:55:52.519Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T20:55:52.519Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e {"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/9) ...
+
+[info]    Generating static pages (2/9) 
+
+[info]    Generating static pages (4/9) 
+
+[info]    Generating static pages (6/9) 
+
+[info]  ✓ Generating static pages (9/9) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    572 B          82.6 kB
+├ ○ /_not-found                          869 B          82.9 kB
+├ ○ /blog                                1.42 kB         185 kB
+├ ○ /login                               1.31 kB         177 kB
+├ ○ /photos                              137 B          82.1 kB
+└ ○ /signup                              1.38 kB         177 kB
++ First Load JS shared by all            82 kB
+  ├ chunks/938-2e0dda791704cbeb.js       26.8 kB
+  ├ chunks/fd9d1056-bb8256514b9e2005.js  53.3 kB
+  ├ chunks/main-app-587cb3dd907f0227.js  219 B
+  └ chunks/webpack-4d258572fc7d684e.js   1.74 kB
+
+
+
+[info] ○  (Static)  prerendered as static content
+
+
+[debug] [2023-12-20T20:56:03.908Z] Error: ENOENT: no such file or directory, open 'C:\Users\tcaro\soupdejour\soupdejourtommy.github.io\dist\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-20T21:32:03.124Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T21:32:03.126Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tcaro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-20T21:32:03.126Z] CLI Version:   13.0.2
+[debug] [2023-12-20T21:32:03.127Z] Platform:      win32
+[debug] [2023-12-20T21:32:03.127Z] Node Version:  v20.10.0
+[debug] [2023-12-20T21:32:03.127Z] Time:          Wed Dec 20 2023 14:32:03 GMT-0700 (Mountain Standard Time)
+[debug] [2023-12-20T21:32:03.127Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T21:32:03.175Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T21:32:03.175Z] > authorizing via signed-in user (soupdejourtommy@gmail.com)
+[debug] [2023-12-20T21:32:03.176Z] [iam] checking project soupdejourtommy-ba24e for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-20T21:32:03.177Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions [none]
+[debug] [2023-12-20T21:32:03.177Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions x-goog-quota-user=projects/soupdejourtommy-ba24e
+[debug] [2023-12-20T21:32:03.177Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T21:32:03.485Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions 200
+[debug] [2023-12-20T21:32:03.486Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T21:32:03.487Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T21:32:03.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T21:32:03.832Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e {"projectId":"soupdejourtommy-ba24e","projectNumber":"880724282692","displayName":"soupdejourtommy","name":"projects/soupdejourtommy-ba24e","resources":{"hostingSite":"soupdejourtommy-ba24e","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1"},"state":"ACTIVE","etag":"1_c411d381-5483-4172-9567-e64dd1da54f3"}
+[debug] [2023-12-20T21:32:06.460Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites pageToken=&pageSize=10
+[debug] [2023-12-20T21:32:06.980Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites 200
+[debug] [2023-12-20T21:32:06.980Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites {"sites":[{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy","defaultUrl":"https://soupdejourtommy.web.app","appId":"1:880724282692:web:71e1cc9f07dc8f90b21b11","type":"USER_SITE"},{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-20T21:32:06.981Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config [none]
+[debug] [2023-12-20T21:32:07.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config 200
+[debug] [2023-12-20T21:32:07.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config {"projectId":"soupdejourtommy-ba24e","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1","apiKey":"AIzaSyAF8-fQl5ForsCDmsmcZJ7NIvfP0BxOIZE","authDomain":"soupdejourtommy-ba24e.firebaseapp.com","messagingSenderId":"880724282692","measurementId":"G-CR8Q0FT0HQ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-20T21:32:13.329Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T21:32:13.658Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T21:32:13.658Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e {"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/9) ...
+
+[info]    Generating static pages (2/9) 
+
+[info]    Generating static pages (4/9) 
+
+[info]    Generating static pages (6/9) 
+
+[info]  ✓ Generating static pages (9/9) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    572 B          82.6 kB
+├ ○ /_not-found                          869 B          82.9 kB
+├ ○ /blog                                1.42 kB         185 kB
+├ ○ /login                               1.31 kB         177 kB
+├ ○ /photos                              137 B          82.1 kB
+└ ○ /signup                              1.38 kB         177 kB
++ First Load JS shared by all            82 kB
+  ├ chunks/938-2e0dda791704cbeb.js       26.8 kB
+  ├ chunks/fd9d1056-bb8256514b9e2005.js  53.3 kB
+  ├ chunks/main-app-587cb3dd907f0227.js  219 B
+  └ chunks/webpack-4d258572fc7d684e.js   1.74 kB
+
+
+
+[info] ○  (Static)  prerendered as static content
+
+
+[debug] [2023-12-20T21:32:25.453Z] Error: ENOENT: no such file or directory, open 'C:\Users\tcaro\soupdejour\soupdejourtommy.github.io\dist\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-20T21:33:52.435Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T21:33:52.437Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tcaro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-20T21:33:52.438Z] CLI Version:   13.0.2
+[debug] [2023-12-20T21:33:52.438Z] Platform:      win32
+[debug] [2023-12-20T21:33:52.438Z] Node Version:  v20.10.0
+[debug] [2023-12-20T21:33:52.438Z] Time:          Wed Dec 20 2023 14:33:52 GMT-0700 (Mountain Standard Time)
+[debug] [2023-12-20T21:33:52.438Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T21:33:52.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T21:33:52.486Z] > authorizing via signed-in user (soupdejourtommy@gmail.com)
+[debug] [2023-12-20T21:33:52.486Z] [iam] checking project soupdejourtommy-ba24e for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-20T21:33:52.488Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions [none]
+[debug] [2023-12-20T21:33:52.488Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions x-goog-quota-user=projects/soupdejourtommy-ba24e
+[debug] [2023-12-20T21:33:52.488Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T21:33:52.770Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions 200
+[debug] [2023-12-20T21:33:52.770Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/soupdejourtommy-ba24e:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-20T21:33:52.772Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T21:33:53.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T21:33:53.003Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e {"projectId":"soupdejourtommy-ba24e","projectNumber":"880724282692","displayName":"soupdejourtommy","name":"projects/soupdejourtommy-ba24e","resources":{"hostingSite":"soupdejourtommy-ba24e","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1"},"state":"ACTIVE","etag":"1_c411d381-5483-4172-9567-e64dd1da54f3"}
+[debug] [2023-12-20T21:33:55.643Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites pageToken=&pageSize=10
+[debug] [2023-12-20T21:33:56.077Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites 200
+[debug] [2023-12-20T21:33:56.077Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites {"sites":[{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy","defaultUrl":"https://soupdejourtommy.web.app","appId":"1:880724282692:web:71e1cc9f07dc8f90b21b11","type":"USER_SITE"},{"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-20T21:33:56.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config [none]
+[debug] [2023-12-20T21:33:56.644Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config 200
+[debug] [2023-12-20T21:33:56.644Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:880724282692:web:7f7d1b9dbc747efdb21b11/config {"projectId":"soupdejourtommy-ba24e","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","storageBucket":"soupdejourtommy-ba24e.appspot.com","locationId":"us-west1","apiKey":"AIzaSyAF8-fQl5ForsCDmsmcZJ7NIvfP0BxOIZE","authDomain":"soupdejourtommy-ba24e.firebaseapp.com","messagingSenderId":"880724282692","measurementId":"G-CR8Q0FT0HQ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-20T21:34:02.372Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e [none]
+[debug] [2023-12-20T21:34:02.711Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e 200
+[debug] [2023-12-20T21:34:02.712Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e {"name":"projects/soupdejourtommy-ba24e/sites/soupdejourtommy-ba24e","defaultUrl":"https://soupdejourtommy-ba24e.web.app","appId":"1:880724282692:web:7f7d1b9dbc747efdb21b11","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.4
+
+[info] 
+   Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/9) ...
+
+[info]    Generating static pages (2/9) 
+
+[info]    Generating static pages (4/9) 
+
+[info]    Generating static pages (6/9) 
+
+[info]  ✓ Generating static pages (9/9) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    572 B          82.6 kB
+├ ○ /_not-found                          869 B          82.9 kB
+├ ○ /blog                                1.42 kB         185 kB
+├ ○ /login                               1.31 kB         177 kB
+├ ○ /photos                              137 B          82.1 kB
+└ ○ /signup                              1.38 kB         177 kB
++ First Load JS shared by all            82 kB
+  ├ chunks/938-2e0dda791704cbeb.js       26.8 kB
+  ├ chunks/fd9d1056-bb8256514b9e2005.js  53.3 kB
+  ├ chunks/main-app-587cb3dd907f0227.js  219 B
+  └ chunks/webpack-4d258572fc7d684e.js   1.74 kB
+
+
+
+[info] ○  (Static)  prerendered as static content
+
+
+[debug] [2023-12-20T21:34:14.503Z] Error: ENOENT: no such file or directory, open 'C:\Users\tcaro\soupdejour\soupdejourtommy.github.io\dist\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
