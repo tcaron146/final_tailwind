@@ -109,7 +109,11 @@
   }
 
   button{
-    @apply p-3 border bg-green-300 text-primary rounded-md;
+    @apply border shadow-lg p-3 w-full mt-2 rounded-sm text-secondary;
+  }
+
+  input{
+    @apply border shadow-lg p-3 w-full my-2 rounded-sm;
   }
 
   h1{
