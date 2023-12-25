@@ -1,49 +1,19 @@
-import { NAV_LINKS } from "@/constants"
-import Link from "next/link"
-import { UserAuth } from "../context/AuthContext"
-import { useState, useEffect } from "react"
-import { BsPerson } from "react-icons/bs"
+'use client'
+import { useState } from "react"
 import { BsSearch } from "react-icons/bs"
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlineMenuAlt4 } from "react-icons/hi"
 import { FaInstagram } from 'react-icons/fa'
 
 const Navbar = () => {
-  const { user, googleSignIn, logOut } = UserAuth();
-  const [loading, setLoading] = useState(true);
   const [nav, setNav] = useState(false);
-  const [logo, setLogo] = useState(false)
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const handleSignIn = async () => {
-    try {
-      await googleSignIn();
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const handleSignOut = async () => {
-    try {
-      await logOut();
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    const checkAuthentication = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 50));
-      setLoading(false);
-    };
-    checkAuthentication();
-  }, [user]);
-
   return (
-    <div className="flex w-full justify-between items-center absolute h-20 px-4 z-10 text-primary">
+    <div className="flex w-full justify-between items-center sticky h-20 px-4 text-primary z-10">
       <div>
         <h1 className="block">Soup.</h1>
       </div>
@@ -57,17 +27,6 @@ const Navbar = () => {
       {/* login-logout icon + Search Icon*/}
       <div className="hidden sm:flex">
       <BsSearch className="hidden sm:flex mr-2 cursor-pointer" size={20} />
-        {loading ? null : !user ? (
-          <div className="flex">
-            <BsPerson onClick={handleSignIn} className='hidden sm:flex cursor-pointer' size={20} />
-            <p onClick={handleSignIn} className="hidden sm:flex cursor-pointer font-semibold">Login</p>
-          </div>
-        ) : (
-          <div className="flex">
-            <BsPerson onClick={handleSignOut} className='hidden sm:flex cursor-pointer' size={20} />
-            <p onClick={handleSignOut} className="hidden sm:flex cursor-pointer font-semibold">Logout</p>
-          </div>
-        )}
       </div>
 
       {/* hamburger */}
@@ -77,20 +36,13 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <div className={nav ? 'absolute left-0 top-0 w-full bg-secondary px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
-        <ul>
+        <ul className="">
           <h1>Soup.</h1>
-          <li className="border-b text-primary"><a href="/">Home</a></li>
-          <li className="border-b text-primary"><a href="/blog">Blog</a></li>
-          <li className="border-b text-primary"><a href="/photos">Photos</a></li>
-          <li className="border-b text-primary"><a href="/next">Next</a></li>
+          <li className="border-b text-primary flex justify-around"><a href="/">Home</a></li>
+          <li className="border-b text-primary flex justify-around"><a href="/blog">Blog</a></li>
+          <li className="border-b text-primary flex justify-around"><a href="/photos">Photos</a></li>
+          <li className="border-b text-primary flex justify-around"><a href="/next">Next</a></li>
         </ul>
-        <div className="flex flex-col">
-          {loading ? null : !user ? (
-            <button onClick={handleSignIn} className="my-4">Login</button>) : (
-            <button onClick={handleSignOut} className="my-4">Logout</button>
-          )}
-          <button className="">Search</button>
-        </div>
         <div className="flex justify-between my-6">
           <a href="https://www.instagram.com/soupdejourtommy/"><FaInstagram className="icon" /></a>
         </div>

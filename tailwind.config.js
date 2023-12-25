@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'sea': "url('/public/sea-7484743_1920.jpg')",
+      },
       colors: {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
         btns: "rgb(var(--color-btns) / <alpha-value>)",
