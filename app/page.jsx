@@ -5,8 +5,9 @@ import Form from "./components/Form";
 import Navbar from "./components/Navbar";
 
 export default function Page() {
-  return (<>
-    <Hero />
-    </>
+  return (
+    <div className="">
+      <Hero />
+    </div>
   )
 }
