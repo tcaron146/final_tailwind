@@ -13,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full justify-between items-center sticky h-20 px-4  border-b-2 border-primary/50 text-primary z-10">
+    <div className="flex w-full justify-between items-center bg-secondary sticky h-20 px-4 border-b-2 border-primary/50 text-primary z-10">
       <div>
-        <h1 className="block">Soup.</h1>
+        <h1 className="block text-primary">Soup.</h1>
       </div>
       {/* desktop links */}
       <ul className="hidden sm:flex">
@@ -30,8 +30,8 @@ const Navbar = () => {
       </div>
 
       {/* hamburger */}
-      <div onClick={handleNav} className="cursor-pointer sm:hidden z-10">
-        {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />}
+      <div onClick={handleNav} className="cursor-pointer text-primary sm:hidden z-10">
+        {nav ? <AiOutlineClose size={20}className='text-primary'/> : <HiOutlineMenuAlt4 size={20} />}
       </div>
 
       {/* mobile menu */}

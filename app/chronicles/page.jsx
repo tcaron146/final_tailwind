@@ -7,7 +7,6 @@ import Navbar from "@/app/components/Navbar";
 const Page = () => {
   return (
     <div>
-      <Navbar />
     </div>
   )
 }
