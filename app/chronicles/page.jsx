@@ -22,7 +22,7 @@ const Page = () => {
         </p>
       </div>
       <div className="absolute top-[50vh] left-[8vw] sm:absolute sm:top-[65vh] sm:left-[20vw]">
-        <h1 className="font-serif text-md sm:text-4xl">First Roadtrip</h1>
+        <h1 className="font-serif text-md sm:text-4xl">Da Nasty South</h1>
         <Image src={horse} alt="south roadtrip preview" className="relative w-52 my-4 sm:w-80" />
         <p className="relative">
           <a href="">click here to learn about the trip</a>
