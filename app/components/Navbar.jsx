@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full justify-between items-center bg-secondary sticky h-20 px-4 border-b-2 border-primary/50 text-primary z-10">
+    <div className="flex w-full justify-between items-center bg-secondary sticky h-20 px-4 text-primary z-10">
       <div>
         <h1 className="block text-primary">Soup.</h1>
       </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* mobile menu */}
-      <div className={nav ? 'absolute left-0 top-0 w-full bg-secondary px-4 py-7 flex flex-col border-b-2 border-primary/20' : 'absolute left-[-100%]'}>
+      <div className={nav ? 'absolute left-0 top-0 w-full bg-secondary px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul className="">
           <h1>Soup.</h1>
           <li className="border-b text-primary flex justify-around"><a href="/">Home</a></li>
